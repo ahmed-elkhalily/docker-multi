@@ -4,6 +4,7 @@ services:
 
 before_install:
   - docker build -t aelkhalily/test-react -f ./client/Dockerfile.dev
+
 script:
   - docker run aelkhalily/test-react npm run test
 

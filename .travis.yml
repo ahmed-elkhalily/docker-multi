@@ -14,6 +14,9 @@ after_success:
   - docker build -t aelkhalily/multi-nginx ./nginx
   - docker build -t aelkhalily/multi-server ./server
   - docker build -t aelkhalily/multi-worker ./worker
-
   #LOGIN TO DOCKER-HUB
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push aelkhalily/multi-client
+  - docker push aelkhalily/multi-nginx
+  - docker push aelkhalily/multi-server
+  - docker push aelkhalily/multi-worker

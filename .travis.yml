@@ -20,3 +20,16 @@ after_script:
   - docker push aelkhalily/multi-nginx
   - docker push aelkhalily/multi-server
   - docker push aelkhalily/multi-worker
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted $ACCESS_KEY_ID"
+  secret_access_key:
+    secure: "Encrypted $SECRET_ACCESS_KEY"
+  region: "us-east-2"
+  app: "multi-docker"
+  env: "multidocker-env"
+  bucket_name: "https://s3.console.aws.amazon.com/s3/buckets/elasticbeanstalk-us-east-2-763967860641?region=us-east-2"
+  bucket_path: "multi-docker"
+  on:
+    branch: main

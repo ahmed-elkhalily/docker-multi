@@ -23,9 +23,6 @@ after_script:
 deploy:
   skip_cleanup: true
   provider: elasticbeanstalk
-  access_key_id: "$ACCESS_KEY_ID"
-  secret_access_key:
-    secure: "$SECRET_ACCESS_KEY"
   region: "us-east-2"
   app: "multi-docker"
   env: "Multidocker-env"
@@ -33,3 +30,6 @@ deploy:
   bucket_path: "multi-docker"
   on:
     branch: main
+  access_key_id: "$ACCESS_KEY_ID"
+  secret_access_key:
+    secure: "$SECRET_ACCESS_KEY"

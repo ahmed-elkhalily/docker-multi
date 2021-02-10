@@ -23,9 +23,9 @@ after_script:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: "Encrypted $ACCESS_KEY_ID"
+    secure: "$ACCESS_KEY_ID"
   secret_access_key:
-    secure: "Encrypted $SECRET_ACCESS_KEY"
+    secure: "$SECRET_ACCESS_KEY"
   region: us-east-2
   app: multi-docke"
   env: multidocker-env

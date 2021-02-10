@@ -25,11 +25,11 @@ deploy:
   access_key_id: "$ACCESS_KEY_ID"
   secret_access_key:
     secure: "$SECRET_ACCESS_KEY"
-  region: us-east-2
-  app: multi-docke"
-  env: multidocker-env
-  bucket_name: elasticbeanstalk-us-east-2-763967860641
-  bucket_path: multi-docker
+  region: "us-east-2"
+  app: "multi-docker"
+  env: "multidocker-env"
+  bucket_name: "elasticbeanstalk-us-east-2-763967860641"
+  bucket_path: "multi-docker"
   on:
     branch: main
   edge: true

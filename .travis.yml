@@ -21,6 +21,7 @@ after_script:
   - docker push aelkhalily/multi-server
   - docker push aelkhalily/multi-worker
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   access_key_id: "$ACCESS_KEY_ID"
   secret_access_key:
@@ -32,4 +33,3 @@ deploy:
   bucket_path: "multi-docker"
   on:
     branch: main
-  edge: true

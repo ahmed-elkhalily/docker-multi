@@ -33,3 +33,4 @@ deploy:
   bucket_path: "multi-docker"
   on:
     branch: main
+  edge: true

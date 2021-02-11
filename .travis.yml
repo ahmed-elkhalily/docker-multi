@@ -1,9 +1,10 @@
 sudo: required
+language: ruby
+rvm:
+  - 3
 services:
   - docker
-
 before_install:
-  - gem 'aws-sdk', '~> 3'
   - docker build  -t aelkhalily/react-test -f ./client/Dockerfile.dev ./client
 
 script:

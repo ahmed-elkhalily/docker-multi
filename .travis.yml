@@ -3,8 +3,7 @@ services:
   - docker
 
 before_install:
-  - require 'aws-sdk-s3'
-  - require 'aws-sdk-dynamodb'
+  - gem 'aws-sdk', '~> 3'
   - docker build  -t aelkhalily/react-test -f ./client/Dockerfile.dev ./client
 
 script:

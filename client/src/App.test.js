@@ -1,7 +1,5 @@
-import React from "react"
-import { render } from "@testing-library/react"
-import App from "./App"
+import React from 'react';
+import { render } from '@testing-library/react';
+import App from './App';
 
-test("renders learn react link", () => {
-	return undefined
-})
+test('renders learn react link', () => {});

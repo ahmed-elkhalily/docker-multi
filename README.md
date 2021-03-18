@@ -10,9 +10,9 @@ is a very basic application to learning how to go to the ***production process**
 1. React as  a **client**.
 2. Node js as a **backend** using Express.
 3. As database 
-..1. Redis
-..2. Postgress
-4. Docker
-5. Travis Ci
-6. Nginx
-7. AWS [Elastic BeanStalck].
+3.1. Redis
+ 3.2. Postgress
+5. Docker
+6. Travis Ci
+7. Nginx
+8. AWS [Elastic BeanStalck].
